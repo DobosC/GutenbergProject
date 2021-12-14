@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json.schemastore.org/block.json",
+  "apiVersion": 2,
+  "name": "create-block/layout-1",
+  "version": "0.1.0",
+  "title": "Layout 1",
+  "category": "birdor",
+  "icon": "twitter",
+  "description": "Birdor webpage template",
+  "supports": {
+	"html": false
+  },
+  "attributes": {
+	"alignContent": {
+	  "type": "string",
+	  "default":"col-md-5 d-flex flex-column align-items-start"
+	},
+	"tagnameSubtitle": {
+	  "type": "string",
+	  "default": "p"
+	},
+	"tagnameTitle": {
+	  "type": "string",
+	  "default": "p"
+	},
+	"fontSizeSubtitle": {
+	  "type": "number",
+	  "default": 15
+	},
+	"fontSizeTitle": {
+	  "type": "number",
+	  "default": 60
+	},
+	"reverseColumns": {
+	  "type": "boolean",
+	  "default": false
+	},
+	"fullWidth": {
+	  "type": "boolean",
+	  "default": false
+	},
+	"backgroundColor": {
+	  "type": "string"
+	},
+	"textColor": {
+	  "type": "string"
+	},
+	"textbutton": {
+	  "type": "string",
+	  "source": "html",
+	  "selector": "span"
+	},
+	"title": {
+	  "type": "string"
+	},
+	"subtitle": {
+	  "type": "string"
+	},
+	"newURL": {
+	  "type": "string",
+	  "source": "attribute",
+	  "attribute": "href",
+	  "selector": "a"
+	},
+	"mediaID": {
+	  "type": "number"
+	},
+	"mediaURL": {
+	  "type": "string",
+	  "source": "attribute",
+	  "selector": "img",
+	  "attribute": "src"
+	},
+	"listID": {
+	  "type": "string"
+	}
+  },
+  "textdomain": "layout-1",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css"
+}
